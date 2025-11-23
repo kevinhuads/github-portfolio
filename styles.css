@@ -264,6 +264,64 @@
     font-size: clamp(2rem, 3vw, 2.6rem);
     margin: 0 0 0.8rem;
   }
+
+  .hero-header-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  
+  .hero-social {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  
+  .hero-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-full);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(148, 163, 255, 0.55);
+    background: rgba(9, 12, 29, 0.95);
+    cursor: pointer;
+    transition:
+      background var(--transition-fast),
+      border-color var(--transition-fast),
+      transform var(--transition-fast),
+      box-shadow var(--transition-fast);
+  }
+  
+  .hero-icon:hover {
+    background: rgba(23, 30, 61, 0.98);
+    border-color: var(--primary);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .icon-inner {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #e2e6ff;
+  }
+  
+  /* Optional subtle variations per service */
+  .hero-icon-github {
+    background: rgba(7, 10, 24, 0.95);
+  }
+  
+  .hero-icon-linkedin {
+    background: rgba(10, 36, 70, 0.95);
+  }
+  
+  .hero-icon-email {
+    background: rgba(35, 25, 63, 0.95);
+  }  
   
   .hero-subtitle {
     margin: 0 0 1.8rem;
@@ -319,7 +377,6 @@
   
   .btn.tertiary-link {
     background: transparent;
-    border: none;
     padding-left: 0;
     padding-right: 0;
     color: var(--text-muted);
