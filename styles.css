@@ -294,20 +294,20 @@
       transform var(--transition-fast),
       box-shadow var(--transition-fast);
   }
+
+  .hero-icon svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+    fill: #e2e6ff;
+    stroke: #e2e6ff;
+  }  
   
   .hero-icon:hover {
     background: rgba(23, 30, 61, 0.98);
     border-color: var(--primary);
     transform: translateY(-1px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  }
-  
-  .icon-inner {
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #e2e6ff;
   }
   
   /* Optional subtle variations per service */
